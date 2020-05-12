@@ -18,8 +18,11 @@ use Illuminate\Support\Facades\Route;
 ///Site Main Routes ///
 
 
-Route::get('/', function () {
-    return view('site.index');
-});
+//Pages
+Route::get('/', 'Index\IndexController@indexPage');
+Route::get('/HowItWorks', 'Index\IndexController@HowItWorksPage');
+Route::get('/MicroJobs', 'Index\IndexController@MicroJobsPage');
+Route::get('/JobDetail', 'Index\IndexController@JobDetailPage');
+
 
 

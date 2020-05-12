@@ -31,7 +31,11 @@
 
 <!-- Header -->
 
-<header class="header header--absolute header--dark" id="site-header">
+@if(Request::path() == 'MicroJobs')
+<header class="header header--sticky header--dark" id="site-header">
+@else 
+<header class="header header--absolute header--transparent" id="site-header">
+@endif 
 	<div class="container">
 		<div class="header-content-wrapper">
 			<a href="index.html" class="site-logo">
@@ -55,15 +59,15 @@
 
 				<ul class="primary-menu-menu">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="/">Home</a>
 					</li>
 
 					<li class="">
-						<a href="02_how_it_works.html">How it Works</a>
+						<a href="/HowItWorks">How it Works</a>
 					</li>
 
 					<li class="menu-item-has-children">
-						<a href="index.html#">Employers
+						<a href="index.html#">Explore
 							<span class="show indicator">
 								<i class="puzzle-icon far fa-angle-down"></i>
 							</span>
@@ -72,7 +76,7 @@
 						<ul class="sub-menu">
 
 							<li>
-								<a href="03_job_lists_row_map.html">Job lists</a>
+								<a href="/MicroJobs">Xtreme/Micro Jobs</a>
 							</li>
 
 							<li>
