@@ -19,7 +19,7 @@ class IndexController extends Controller
 
     public function MicroJobsPage()
     {
-        return view('site.microjobs');
+        return view('site.JobPages.microjobslists');
     }
 
     public function JobDetailPage()

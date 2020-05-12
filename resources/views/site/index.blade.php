@@ -18,7 +18,7 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3 mb-md-0" data-swiper-parallax="-300">
-								<h2 class="h1 main-slider-title">Get your dream job</h2>
+								<h2 class="h1 main-slider-title">Get your Xtreme Job</h2>
 								<h3 class="main-slider-sub-title">We have
 									<span class="c-primary">69.368</span> great job offers you deserve!</h3>
 								<div class="universal-btn-wrapper">
@@ -40,7 +40,7 @@
 								<img src="../../assets/img/svg/03_freelancer.svg" alt="team">
 							</div>
 							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12" data-swiper-parallax="-300">
-								<h2 class="h1 main-slider-title">Your dream job just a click away</h2>
+								<h2 class="h1 main-slider-title">Your Micro job just a click away</h2>
 								<div class="universal-btn-wrapper">
 									<a href="11_submit_resume.html" class="crumina-button button--blue button--xl button--hover-primary">Get Started Now</a>
 									<a href="10_candidate_details.html" class="arrow--white link--bold link--with-icon link--icon-right">Details<i class="puzzle-icon far fa-angle-right"></i></a>
@@ -53,7 +53,7 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 mb-3 mb-md-0" data-swiper-parallax="-300">
-								<h2 class="h1 main-slider-title">Find a perfect candidate</h2>
+								<h2 class="h1 main-slider-title">Find a perfect Xtreme Worker</h2>
 								<h3 class="main-slider-sub-title title--small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h3>
 								<div class="universal-btn-wrapper">
 									<a href="08_candidate_lists_row_map.html" class="crumina-button button--red button--xl button--hover-primary">Candidate List</a>

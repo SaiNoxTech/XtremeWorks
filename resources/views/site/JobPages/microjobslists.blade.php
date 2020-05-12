@@ -354,26 +354,26 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<nav class="navigation">
 
-						<a href="03_job_lists_row_map.html#" class="page-numbers btn-start">
+						<a href="" class="page-numbers btn-start">
 							<i class="puzzle-icon fal fa-angle-double-left"></i>
 						</a>
 
-						<a href="03_job_lists_row_map.html#" class="page-numbers btn--prev">
+						<a href="" class="page-numbers btn--prev">
 							<i class="puzzle-icon fal fa-angle-left"></i>
 						</a>
 
-						<a href="03_job_lists_row_map.html#" class="page-numbers current"><span>1</span></a>
-						<a href="03_job_lists_row_map.html#" class="page-numbers"><span>2</span></a>
-						<a href="03_job_lists_row_map.html#" class="page-numbers"><span>3</span></a>
-						<a href="03_job_lists_row_map.html#" class="page-numbers"><span>4</span></a>
-						<a href="03_job_lists_row_map.html#" class="page-numbers"><span>5</span></a>
-						<a href="03_job_lists_row_map.html#" class="page-numbers"><span>6</span></a>
+						<a href="" class="page-numbers current"><span>1</span></a>
+						<a href="" class="page-numbers"><span>2</span></a>
+						<a href="" class="page-numbers"><span>3</span></a>
+						<a href="" class="page-numbers"><span>4</span></a>
+						<a href="" class="page-numbers"><span>5</span></a>
+						<a href="" class="page-numbers"><span>6</span></a>
 
-						<a href="03_job_lists_row_map.html#" class="page-numbers btn--next">
+						<a href="" class="page-numbers btn--next">
 							<i class="puzzle-icon fal fa-angle-right"></i>
 						</a>
 
-						<a href="03_job_lists_row_map.html#" class="page-numbers btn-end">
+						<a href="" class="page-numbers btn-end">
 							<i class="puzzle-icon fal fa-angle-double-right"></i>
 						</a>
 
