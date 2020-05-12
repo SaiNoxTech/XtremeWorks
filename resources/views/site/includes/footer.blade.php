@@ -170,69 +170,10 @@
 <!-- ... end Footer -->
 
 
-<div class="modal fade window-popup" id="loginModal" tabindex="-1" role="dialog"  aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<form class="form-login">
-					<h2>My Account</h2>
-					<div class="mb-4">For fast login use your social account.</div>
-					<button type="button" class="crumina-button button--blue-dark button--l button--with-icon button--icon-left w-100 mb-2">
-						<i class="puzzle-icon fab fa-facebook-square"></i>Login with the Facebook
-					</button>
-					<button type="button" class="crumina-button button--blue button--l button--with-icon button--icon-left w-100 mb-4">
-						<i class="puzzle-icon fab fa-twitter"></i>Login with the Twitter
-					</button>
-					<label for="name">Username or Email Address *</label>
-					<input id="name" name="name" placeholder="" type="text">
-					<div class="d-flex align-items-center justify-content-between mb-3">
-						<label class="mb-0" for="password">Password *</label>
-						<a href="index.html#">Lost your password?</a>
-					</div>
-					<input id="password" name="password" placeholder="" type="password">
-					<div class="checkbox checkbox--transparent mt-2 mb-4">
-						<label>
-							<input type="checkbox" name="optionsCheckboxes4">
-							<span class="checkbox-material"><span class="check"></span></span>
-							Remember Me
-						</label>
-					</div>
-					<button type="button" class="crumina-button button--green button--l w-100">Log In</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+@include ("site.includes.login")
+@include ("site.includes.register")
 
-<div class="modal fade window-popup" id="signupModal" tabindex="-1" role="dialog"  aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<form class="form-login">
-					<h2 class="mb-4">Register</h2>
-					<label for="first_name">First Name *</label>
-					<input id="first_name" name="name" placeholder="" type="text">
-					<label for="last_name">Last Name *</label>
-					<input id="last_name" name="name" placeholder="" type="text">
-					<label for="password1">Password *</label>
-					<input id="password1" name="name" placeholder="" type="password">
-					<button type="button" class="crumina-button button--green button--l w-100 my-3">Create an Account</button>
-					<button type="button" class="crumina-button button--white button--l w-100">Log In</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 @include("site.includes.js")
 

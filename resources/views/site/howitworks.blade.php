@@ -14,7 +14,7 @@
 						</li>
 					</ul>
 
-					<h1 class="page-title text-white">How Puzzler works for you</h1>
+					<h1 class="page-title text-white">How XtremeWorkers works for you</h1>
 				</div>
 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt100">

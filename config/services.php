@@ -30,4 +30,16 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'twitter' => [
+        'client_id' => '',
+        'client_secret' => '', 
+        'redirect' => 'http://127.0.0:8001/login/twitter/callback',
+    ],
+
+    'google' => [
+        'client_id' => '',
+        'client_secret' => '', 
+        'redirect' => 'http://127.0.0:8001/login/twitter/callback',
+    ],
+
 ];

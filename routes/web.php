@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Social Login //
 
+Route::get('/login/{social}','Auth\LoginController@SocialLogin')->where('social','twitter|facebook|linkdin|google|github');
+Route::get('/login/{social/callback}','Auth\LoginController@handleProviderCallback')->where('social','twitter|facebook|linkdin|google|github');
 
 ///Site Main Routes ///
 
@@ -26,3 +29,7 @@ Route::get('/JobDetail', 'Index\IndexController@JobDetailPage');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
