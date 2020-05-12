@@ -32,4 +32,5 @@ Route::get('/JobDetail', 'Index\IndexController@JobDetailPage');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//User Routes
+Route::get('/home', 'Index\IndexController@indexPage')->name('home');

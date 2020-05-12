@@ -81,10 +81,83 @@
 
 						</ul>
 					</li>
+					@if(Auth::user())
+					<li class="menu-item-has-children">
+						<a href="/user/dashboard">Dashboard
+							<span class="show indicator">
+								<i class="puzzle-icon far fa-angle-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+
+							<li>
+								<a href="/MicroJobs">Post Micro Jobs</a>
+							</li>
+							<li>
+								<a href="/MicroJobs">Check Job Status</a>
+							</li>
+							<li>
+								<a href="/MicroJobs">Add Wallet Balance</a>
+							</li>
+							<li>
+								<a href="/MicroJobs">Submit Withdrawl Request</a>
+							</li>
+							<li>
+								<a href="/MicroJobs">Transaction History</a>
+							</li>
+
+						</ul>
+					</li>
+					@endif
+
+					<li class="menu-item-has-children">
+						<a href="/user/dashboard">News
+							<span class="show indicator">
+								<i class="puzzle-icon far fa-angle-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+
+							<li>
+								<a href="/MicroJobs">Latest News</a>
+							</li>
+							<li>
+								<a href="/MicroJobs">Submit Your Own Article</a>
+							</li>
+
+						</ul>
+					</li>
 				</ul>
 
 			</nav>
 
+			@if(Auth::user())
+			<nav class="login-menu">
+				<ul>
+					<li>
+						<a href>{{Auth::user()->username}}</a>
+					</li>
+					
+					<li>
+						<a href="">Wallet: 120$</a>
+					</li>
+					<li>
+						<a href="{{ route('logout') }}"
+						onclick="event.preventDefault();
+									  document.getElementById('logout-form').submit();"><img class="puzzle-icon" src="../../assets/img/svg/10_freelancer_white_tab.svg" width="7"> Logout
+						</a>
+						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+							@csrf
+						</form>
+					</li>
+					<!--li>
+						<a type="button" style="color:black; " href="" class="crumina-button button--primary button--s button--hover-primary">Dashboard</a>
+					</li-->
+				</ul>
+			</nav>
+			@else
 			<nav class="login-menu">
 				<ul>
 					<li>
@@ -95,6 +168,7 @@
 					</li>
 				</ul>
 			</nav>
+			@endif
 
 			<select class="puzzle--select language-switcher" data-minimum-results-for-search="Infinity" data-dropdown-css-class="language-switcher-dropdown">
 				<option value="Ua" data-href="">Ua</option>

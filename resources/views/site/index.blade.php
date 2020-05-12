@@ -580,7 +580,9 @@
 			</div>
 		</div>
 	</section>
+@if(Auth::user())
 
+@else
 	<section class="medium-padding120">
 		<div class="container">
 			<div class="row mb60">
@@ -769,7 +771,7 @@
 			</div>
 		</div>
 	</section>
-
+@endif
 	<section class="medium-padding120">
 		<div class="container">
 			<div class="row">
@@ -865,6 +867,28 @@
 			</div>
 		</div>
 	</section>
+
+@if(Auth::user())
+<section class="medium-padding120 bg-accent-primary">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 mb-4 mb-lg-0">
+				<header class="crumina-module crumina-heading heading--h2 heading--with-decoration heading--inline decoration--dark-theme mb-0">
+					<h2 class="heading-title">Get to started XtremeWorkers Refer & Earn</h2>
+					<div class="heading-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				</header>
+			</div>
+
+			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+				<button type="button" class="crumina-button button--dark button--l button--with-icon button--icon-left" data-toggle="modal" data-target="#signupModal"><i class="puzzle-icon fas fa-user-tie"></i>Get Referal Code</button>
+			</div>
+
+		</div>
+	</div>
+</section>
+@else
+	
+@endif
 
 </div>
 @include("site.includes.footer")
