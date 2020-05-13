@@ -63,6 +63,10 @@
 					</li>
 
 					<li class="">
+						<a href="/HowItWorks">About Us</a>
+					</li>
+
+					<li class="">
 						<a href="/HowItWorks">How it Works</a>
 					</li>
 
@@ -141,7 +145,7 @@
 					</li>
 					
 					<li>
-						<a href="">Wallet: 120$</a>
+						<a href="">Wallet: <span style="color:#64dfac;">120$</span></a>
 					</li>
 					<li>
 						<a href="{{ route('logout') }}"
