@@ -34,3 +34,7 @@ Auth::routes();
 
 //User Routes
 Route::get('/home', 'Index\IndexController@indexPage')->name('home');
+
+Route::prefix('user')->group(function() {
+    Route::get('/dashboard', 'User\UserDashboardController@UserDashboard')->name('user.dashboard');
+});
