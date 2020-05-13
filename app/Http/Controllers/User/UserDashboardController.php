@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class UserDashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:web');
+    }
+    
     public function UserDashboard()
     {
         return view('user.dashboard');

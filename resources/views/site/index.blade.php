@@ -565,8 +565,8 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 pt120 pb120">
 					<header class="crumina-module crumina-heading heading--h2 heading--with-decoration text-white">
-						<h2 class="heading-title">Get Puzzler App for your mobile</h2>
-						<div class="heading-text">Download free Puzzler application now!</div>
+						<h2 class="heading-title">Get XtremeWorkers App for your mobile</h2>
+						<div class="heading-text">Download free XtremeWorkers application now!</div>
 					</header>
 					<div class="universal-btn-wrapper">
 						<a href="index.html#" class="crumina-button button--market"><i class="puzzle-icon fab fa-apple"></i>Apple<br>Store</a>

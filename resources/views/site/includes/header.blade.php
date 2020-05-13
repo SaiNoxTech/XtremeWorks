@@ -85,6 +85,25 @@
 
 						</ul>
 					</li>
+
+					<li class="menu-item-has-children">
+						<a href="/user/dashboard">News
+							<span class="show indicator">
+								<i class="puzzle-icon far fa-angle-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+
+							<li>
+								<a href="/MicroJobs">Latest News</a>
+							</li>
+							<li>
+								<a href="/MicroJobs">Submit Your Own Article</a>
+							</li>
+
+						</ul>
+					</li>
 					@if(Auth::user())
 					<li class="menu-item-has-children">
 						<a href="/user/dashboard">Dashboard
@@ -114,25 +133,6 @@
 						</ul>
 					</li>
 					@endif
-
-					<li class="menu-item-has-children">
-						<a href="/user/dashboard">News
-							<span class="show indicator">
-								<i class="puzzle-icon far fa-angle-down"></i>
-							</span>
-						</a>
-
-						<ul class="sub-menu">
-
-							<li>
-								<a href="/MicroJobs">Latest News</a>
-							</li>
-							<li>
-								<a href="/MicroJobs">Submit Your Own Article</a>
-							</li>
-
-						</ul>
-					</li>
 				</ul>
 
 			</nav>
