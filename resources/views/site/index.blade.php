@@ -1,4 +1,5 @@
-@include("site.includes.header")
+@extends('site.layouts.main')
+@section('content')
 <div class="main-content-wrapper">
 
 	<div class="crumina-module crumina-module-slider slider--main navigation-center-both-sides bg-dark-themes">
@@ -891,4 +892,4 @@
 @endif
 
 </div>
-@include("site.includes.footer")
+@stop

@@ -1,4 +1,5 @@
-@include("site.includes.header")
+@extends('site.layouts.main')
+@section('content')
 <div class="main-content-wrapper">
 
 	<section class="stunning-header bg-dark-themes pt200 pb120">
@@ -462,4 +463,4 @@
 
 </div>
 
-@include("site.includes.footer")
+@stop

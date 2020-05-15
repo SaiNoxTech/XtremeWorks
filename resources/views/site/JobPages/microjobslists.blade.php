@@ -1,4 +1,5 @@
-@include("site.includes.header")
+@extends('site.layouts.main')
+@section('content')
 <div class="main-content-wrapper">
 
 	<section>
@@ -576,4 +577,4 @@
 	</section>
 
 </div>
-@include("site.includes.footer")
+@stop

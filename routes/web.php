@@ -28,6 +28,13 @@ Route::get('/MicroJobs', 'Index\IndexController@MicroJobsPage');
 Route::get('/JobDetail', 'Index\IndexController@JobDetailPage');
 
 
+Route::get('product', 'Payments\RazorpayController@razorpayProduct');
+Route::post('paysuccess', 'Payments\RazorpayController@razorPaySuccess');
+Route::post('razor-thank-you', 'Payments\RazorpayController@RazorThankYou');
+
+Route::get('wallet', 'Payments\RazorpayController@Wallet');
+Route::post('paymentrequest', 'Payments\RazorpayController@paymentrequest');
+Route::post('paymentresponse', 'Payments\RazorpayController@paymentresponse');
 
 
 Auth::routes();

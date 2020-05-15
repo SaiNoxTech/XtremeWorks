@@ -166,16 +166,3 @@
 		Go to top
 	</a>
 </footer>
-
-<!-- ... end Footer -->
-
-
-@include ("site.includes.login")
-@include ("site.includes.register")
-
-
-
-@include("site.includes.js")
-
-</body>
-</html>
