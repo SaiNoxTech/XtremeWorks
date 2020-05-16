@@ -171,7 +171,7 @@
 <script src="../../assets/dashboard/vendor/chart.js/dist/Chart.extension.js"></script>
 <script src="../../assets/dashboard/vendor/jvectormap-next/jquery-jvectormap.min.js"></script>
 <script src="../../assets/dashboard/js/vendor/jvectormap/jquery-jvectormap-world-mill.js"></script>
-<script src="../../assets/dashboard/js/argon.min.js%3Fv=1.1.0"></script>
+<script src="../../assets/dashboard/js/argon.min.js"></script>
 <script src="../../assets/dashboard/js/demo.min.js"></script>
 
 <script>
