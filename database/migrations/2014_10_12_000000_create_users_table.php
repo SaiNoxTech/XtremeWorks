@@ -18,6 +18,11 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('fullname');
             $table->string('phone');
+            $table->string('paypal');
+            $table->string('paytm');
+            $table->string('upi');
+            $table->string('BankAccountNo');
+            $table->string('BankIfsc');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
