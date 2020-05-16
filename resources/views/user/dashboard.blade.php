@@ -113,7 +113,7 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 ?>
 
 <h1>You Are From : <?php echo ip_info($user_ip, "Country"); ?> </h1>
-<h1>You Adress : <?php echo ip_info($user_ip, "Address"); ?> </h1>
-<h2><img src="https://www.countryflags.io/<?php echo ip_info($user_ip, "Country Code"); ?>/flat/64.png" /></h2>
+<h1>Your Adress : <?php echo ip_info($user_ip, "Address"); ?> </h1>
+<h2>Flag: <img src="https://www.countryflags.io/<?php echo ip_info($user_ip, "Country Code"); ?>/flat/64.png" /></h2>
   <!-- Footer -->
   @stop

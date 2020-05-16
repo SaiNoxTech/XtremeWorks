@@ -11,34 +11,51 @@ class IndexController extends Controller
 {
     public function indexPage()
     {
-        $username = Auth::user()->username;
-        $email = Auth::user()->email;
-        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
-        return view('site.index')->with(compact('wallet')); 
+        if(Auth::user()) {
+            $username = Auth::user()->username;
+            $email = Auth::user()->email;
+            $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+            return view('site.index')->with(compact('wallet')); 
+        } else {
+            return view('site.index');
+        }
+        
     }
 
     public function HowItWorksPage()
     {
-        $username = Auth::user()->username;
-        $email = Auth::user()->email;
-        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
-        return view('site.howitworks')->with(compact('wallet')); 
+        if(Auth::user()) {
+            $username = Auth::user()->username;
+            $email = Auth::user()->email;
+            $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+            return  view('site.howitworks')->with(compact('wallet')); 
+        } else {
+            return view('site.howitworks'); 
+        }
     }
 
     public function MicroJobsPage()
     {
-        $username = Auth::user()->username;
-        $email = Auth::user()->email;
-        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
-        return view('site.JobPages.microjobslists')->with(compact('wallet')); 
+        if(Auth::user()) {
+            $username = Auth::user()->username;
+            $email = Auth::user()->email;
+            $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+            return  view('site.JobPages.microjobslists')->with(compact('wallet'));  
+        } else {
+            return view('site.JobPages.microjobslists'); 
+        }
     }
 
     public function JobDetailPage()
     {
-        $username = Auth::user()->username;
-        $email = Auth::user()->email;
-        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
-        return view('site.JobPages.jobdetails')->with(compact('wallet')); 
+        if(Auth::user()) {
+            $username = Auth::user()->username;
+            $email = Auth::user()->email;
+            $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+            return  view('site.JobPages.jobdetails')->with(compact('wallet'));  
+        } else {
+            return view('site.JobPages.jobdetails'); 
+        }
     }
 
 
