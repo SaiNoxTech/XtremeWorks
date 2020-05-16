@@ -8,7 +8,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4 mb-lg-0">
 					<div class="widget w-info">
 						<a href="index.html" class="site-logo">
-							<img class="puzzle-icon" src="../../assets/img/svg/01_logo_white.svg" alt="logo" width="120">
+							<img class="puzzle-icon" src="../../assets/img/logo/xtremeworkers-logo-white.png" alt="logo" width="210">
 						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -21,7 +21,7 @@
 
 						<div class="contact-item">
 							<i class="puzzle-icon far fa-at"></i>
-							<a href="mailto:info@sample.com">support@jobook.com</a>
+							<a href="mailto:info@sample.com">support@xtremeworkers.com</a>
 						</div>
 
 					</div>
@@ -148,10 +148,9 @@
 
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center text-lg-right">
 					<div class="copyright">
-						<span>© 2019 </span>
-						<span><a href="index.html">Puzzler.</a></span>
-						<span>designed by <a href="https://themeforest.net/user/themefire/portfolio" class="logo-title">themefire.</a></span>
-						<span>Developed by <a href="https://crumina.net/" class="logo-title">Crumina</a></span>
+						<span>© 2020 </span>
+						<span><a href="index.html">XtremeWorkers</a></span>
+						<span>Developed by <a href="https://crumina.net/" class="logo-title">Sainox Technologies</a></span>
 					</div>
 				</div>
 

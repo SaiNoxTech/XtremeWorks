@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Payments;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Auth;
+use DB;
 
 class RazorpayController extends Controller
 {
@@ -78,9 +80,33 @@ class RazorpayController extends Controller
         $data = $orderId.$orderAmount.$referenceId.$txStatus.$paymentMode.$txMsg.$txTime;
 		$hash_hmac = hash_hmac('sha256', $data, $secretkey, true) ;
 		$computedSignature = base64_encode($hash_hmac);
-		if ($signature == $computedSignature) {
-            return view('PaymentGateway.result')->with(compact('FinalAmount'));
-        }
+        
+        if ($signature == $computedSignature) {
+            
+            $wT = DB::select('select * from walletTransactions where orderId = ?',[$orderId]);
+            $username = $wT[0]->username;
+            $useremail = $wT[0]->email;
+            DB::update('update walletTransactions set orderAmount = ?, referenceId = ?, txMsg = ?, paymentMode = ?, txStatus = ? where orderId = ?',[$FinalAmount, $referenceId, $txMsg, $paymentMode, $txStatus, $orderId]);
+            
+            //Wallet Creation and Updation Part
+            if($txStatus == "SUCCESS") {
+                $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $useremail]);
+                if(count($wallet)>0) {
+                    $updated_at = new \DateTime();
+                    DB::update('update wallets set balance = balance + ?, updated_at = ? where email = ? AND username = ?',[$FinalAmount, $updated_at, $useremail, $username]);
+                } else {
+                    $created_at = new \DateTime();
+                    $updated_at = new \DateTime();
+                    $data=array('username'=>$username, 'email'=>$useremail, 'balance'=>$FinalAmount, 'created_at'=>$created_at, 'updated_at'=>$updated_at);
+                    DB::table('wallets')->insert($data);
+                }
+                return view('user.wallet.paymentSuccess')->with(compact('FinalAmount' , 'referenceId', 'paymentMode','txStatus'));
+            } else {
+                return view('user.wallet.paymentFailed')->with(compact('FinalAmount', 'referenceId', 'paymentMode'));
+            }
 
+         }
     }
+
 }
+

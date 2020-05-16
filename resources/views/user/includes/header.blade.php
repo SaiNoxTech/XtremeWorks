@@ -2,8 +2,8 @@
     <div class="scrollbar-inner">
       <!-- Brand -->
       <div class="sidenav-header  d-flex  align-items-center">
-        <a class="navbar-brand" href="../../pages/dashboards/dashboard.html">
-          <img src="../../assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand" href="/">
+          <img src="../../assets/img/logo/xtremeworkers-logo-black.png" class="navbar-brand-img" alt="...">
         </a>
         <div class=" ml-auto ">
           <!-- Sidenav toggler -->
@@ -22,74 +22,34 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+              <a class="nav-link active" href="/user/dashboard"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
                 <i class="ni ni-shop text-primary"></i>
                 <span class="nav-link-text">Dashboards</span>
               </a>
-              <div class="collapse show" id="navbar-dashboards">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/dashboards/dashboard.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> D </span>
-                      <span class="sidenav-normal"> Dashboard </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/dashboards/alternative.html" class="nav-link active">
-                      <span class="sidenav-mini-icon"> A </span>
-                      <span class="sidenav-normal"> Alternative </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                <i class="ni ni-ungroup text-orange"></i>
-                <span class="nav-link-text">Examples</span>
+                <i class="ni ni-money-coins text-green"></i>
+                <span class="nav-link-text">Wallet</span>
               </a>
               <div class="collapse" id="navbar-examples">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../../pages/examples/pricing.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> P </span>
-                      <span class="sidenav-normal"> Pricing </span>
+                  <a href="{{route('user.addbalance')}}" class="nav-link">
+                      <span class="sidenav-mini-icon"> + &nbsp; </span>
+                      <span class="sidenav-normal"> Add Balance </span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../../pages/examples/login.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> L </span>
-                      <span class="sidenav-normal"> Login </span>
+                    <a href="{{route("user.withdrawl")}}" class="nav-link">
+                      <span class="sidenav-mini-icon"> - &nbsp;</span>
+                      <span class="sidenav-normal"> Withdrawl Balance </span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../../pages/examples/register.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> R </span>
-                      <span class="sidenav-normal"> Register </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/lock.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> L </span>
-                      <span class="sidenav-normal"> Lock </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/timeline.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> T </span>
-                      <span class="sidenav-normal"> Timeline </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/profile.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> P </span>
-                      <span class="sidenav-normal"> Profile </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/rtl-support.html" class="nav-link">
-                      <span class="sidenav-mini-icon"> RP </span>
-                      <span class="sidenav-normal"> RTL Support </span>
+                    <a href="{{route("user.paymenttranscations")}}" class="nav-link">
+                      <span class="sidenav-mini-icon"> </span>
+                      <span class="sidenav-normal"> Transactions </span>
                     </a>
                   </li>
                 </ul>
@@ -498,7 +458,7 @@
                     <img alt="Image placeholder" src="../../assets/dashboard/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold">{{Auth::user()->fullname}}</span>
                   </div>
                 </div>
               </a>

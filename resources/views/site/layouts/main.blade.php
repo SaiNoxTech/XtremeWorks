@@ -11,6 +11,7 @@
 
     @include ("site.includes.login")
     @include ("site.includes.register")
+    @include("site.includes.footer")
     @include("site.includes.js")
 </body>
 </html>

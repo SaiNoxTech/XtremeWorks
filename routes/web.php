@@ -44,4 +44,9 @@ Route::get('/home', 'Index\IndexController@indexPage')->name('home');
 
 Route::prefix('user')->group(function() {
     Route::get('/dashboard', 'User\UserDashboardController@UserDashboard')->name('user.dashboard');
+    Route::get('/wallet/add', 'User\UserDashboardController@AddBalance')->name('user.addbalance');
+    Route::post('/wallet/deposit', 'User\UserDashboardController@DepositBalance')->name('user.depositBalance');
+    Route::post('/wallet/PaymentStatus', 'Payments\RazorpayController@paymentresponse')->name('user.WalletSuccess');
+    Route::get('/wallet/transactions', 'User\UserDashboardController@paymenttranscations')->name('user.paymenttranscations');
+    Route::get('/wallet/Withdrawl', 'User\UserDashboardController@paymentwithdrawl')->name('user.withdrawl');
 });

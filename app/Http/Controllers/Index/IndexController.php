@@ -4,27 +4,41 @@ namespace App\Http\Controllers\Index;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Auth;
+use DB;
 
 class IndexController extends Controller
 {
     public function indexPage()
     {
-        return view('site.index');
+        $username = Auth::user()->username;
+        $email = Auth::user()->email;
+        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+        return view('site.index')->with(compact('wallet')); 
     }
 
     public function HowItWorksPage()
     {
-        return view('site.howitworks');
+        $username = Auth::user()->username;
+        $email = Auth::user()->email;
+        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+        return view('site.howitworks')->with(compact('wallet')); 
     }
 
     public function MicroJobsPage()
     {
-        return view('site.JobPages.microjobslists');
+        $username = Auth::user()->username;
+        $email = Auth::user()->email;
+        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+        return view('site.JobPages.microjobslists')->with(compact('wallet')); 
     }
 
     public function JobDetailPage()
     {
-        return view('site.JobPages.jobdetails');
+        $username = Auth::user()->username;
+        $email = Auth::user()->email;
+        $wallet = DB::select('select * from wallets where username = ? AND email = ?',[$username, $email]);
+        return view('site.JobPages.jobdetails')->with(compact('wallet')); 
     }
 
 

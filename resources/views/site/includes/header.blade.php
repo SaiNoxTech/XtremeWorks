@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="header-content-wrapper">
 			<a href="index.html" class="site-logo">
-				<img class="puzzle-icon" src="../../assets/img/svg/01_logo_white.svg" alt="logo" width="120">
+				<img class="puzzle-icon" src="../../assets/img/logo/xtremeworkers-logo-white.png" alt="logo" width="170">
 			</a>
 
 			<nav id="primary-menu" class="primary-menu">
@@ -89,13 +89,13 @@
 								<a href="/MicroJobs">Check Job Status</a>
 							</li>
 							<li>
-								<a href="/MicroJobs">Add Wallet Balance</a>
+								<a href="/user/wallet/add">Add Wallet Balance</a>
 							</li>
 							<li>
-								<a href="/MicroJobs">Submit Withdrawl Request</a>
+								<a href="/user/wallet/Withdrawl">Submit Withdrawl Request</a>
 							</li>
 							<li>
-								<a href="/MicroJobs">Transaction History</a>
+								<a href="/user/wallet/transactions">Transaction History</a>
 							</li>
 
 						</ul>
@@ -113,12 +113,12 @@
 					</li>
 					
 					<li>
-						<a href="">Wallet: <span style="color:#64dfac;">120$</span></a>
+						<a href="">Wallet: <span style="color:#64dfac;">${{$wallet[0]->balance}}</span></a>
 					</li>
 					<li>
 						<a href="{{ route('logout') }}"
 						onclick="event.preventDefault();
-									  document.getElementById('logout-form').submit();"><img class="puzzle-icon" src="../../assets/img/svg/10_freelancer_white_tab.svg" width="7"> Logout
+									  document.getElementById('logout-form').submit();">Logout
 						</a>
 						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 							@csrf
