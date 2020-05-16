@@ -40,4 +40,4 @@
   <link rel="stylesheet" href="../../assets/dashboard/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
   <link rel="stylesheet" href="../../assets/dashboard/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">
   <!-- Argon CSS -->
-  <link rel="stylesheet" href="../../assets/dashboard/css/argon.min.css%3Fv=1.1.0.css" type="text/css">
+  <link rel="stylesheet" href="../../assets/dashboard/css/argon.min.css" type="text/css">
